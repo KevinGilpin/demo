@@ -1,0 +1,25 @@
+<form>
+  <fieldset id="{{id}}">
+    <legend>Edit Workout</legend>
+    <label for="name">name:</label>
+    <input type="text" name="name" id="name" value="{{name}}">
+    <label for="reps">reps:</label>
+    <input type="text" name="reps" id="reps" value="{{reps}}">
+    <label for="weight">weight:</label>
+    <input type="text" name="weight" id="weight"  value="{{weight}}">
+    <label for="date">date:</label>
+    <input type="text" name="date" id="date" value="{{date}}">
+    <label for="lbs">lbs/kgs:</label>
+    <select id="lbs">
+    {{#if lbs}}
+      <option value="1" selected="selected">lbs</option>
+      <option value="0">kgs</option>
+    {{else}}
+      <option value="1">lbs</option>
+      <option value="0" selected="selected">kgs</option>
+    {{/if}}
+    </select>
+    <input type="submit" value="Save" id="Save">
+  </fieldset>
+</form>
+<script src="/js/edit.js"></script>
